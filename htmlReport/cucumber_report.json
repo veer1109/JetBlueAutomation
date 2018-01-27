@@ -1,0 +1,263 @@
+[
+  {
+    "description": "As a user I want to perform search for flight \nso that i can see diffrent flight options available\nand perform steps \nForm : Boston Area (By Clicking on From button and then selecting the option)\nTo : South Florida Area (By using autocomplete option)\nDate : 15 March 2018\nReturn : 20 March 2018\n2 Adults\nGo To Refundable on Fligh Search Results\nSelect Departing Flight (2:29 PM BOS -> 5:56 PM FLL)\nSelect Returning Flight (1:25 PM FLL -> 4:36 PM BOS)\nExpand Iternary from right hand panel\nClick Continue\nEnter Traveller Details (Only Mandatory Fields)\nAgain go to home page",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "JetBlue Flight Search",
+    "tags": [],
+    "uri": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\JetBlueSearch.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Enter Search Details",
+        "tags": [
+          {
+            "line": 17,
+            "name": "@smoke"
+          }
+        ],
+        "id": "jetblue-flight-search;enter-search-details",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I go to \"https://www.jetblue.com/\"",
+            "result": {
+              "status": "passed",
+              "duration": 4
+            },
+            "line": 19,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter\"Boston Area\"in Departure Airport",
+            "result": {
+              "status": "passed",
+              "duration": 12
+            },
+            "line": 20,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter\"South\"in Arrival Airport",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 21,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:26"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter\"03-15-2018\"in Departure Date",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 22,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter\"03-20-2018\"in Arrival Date",
+            "result": {
+              "status": "passed",
+              "duration": 2
+            },
+            "line": 23,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:34"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select\"2\"from Adult Passengers",
+            "result": {
+              "status": "passed",
+              "duration": 4
+            },
+            "line": 24,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:39"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click Find It Button to go Flight search",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 25,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:45"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Select Flight from Search Result",
+        "tags": [
+          {
+            "line": 26,
+            "name": "@smoke"
+          }
+        ],
+        "id": "jetblue-flight-search;select-flight-from-search-result",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click Refundable button for Departure Flight",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 28,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:52"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select Departure flight",
+            "result": {
+              "status": "passed",
+              "duration": 10
+            },
+            "line": 29,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:58"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click Refundable button for Arrival Flight",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 30,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:63"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select Arrival flight",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 31,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:68"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I view Iternary Summary",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 32,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:75"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click Continue Button",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 33,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:79"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I accept Baggage Terms to go to Passengers details page",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 34,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:84"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Enter Traveller Details",
+        "tags": [
+          {
+            "line": 35,
+            "name": "@smoke"
+          }
+        ],
+        "id": "jetblue-flight-search;enter-traveller-details",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter Passengers Details",
+            "result": {
+              "status": "passed",
+              "duration": 10
+            },
+            "line": 37,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:92"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on Home link to go to JetBlue website home page",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "line": 38,
+            "match": {
+              "location": "E:\\ProtractorAutomation\\JetBlueAutomation\\features\\StepDefinations\\stepDefinitions.js:106"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "jetblue-flight-search"
+  }
+]
